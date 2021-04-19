@@ -12,6 +12,6 @@ function fuzzyMatch(arr, string) {
 }
 
 function matchName(arr, string) {
-  let elementFind = arr.find((person) => person.name === string);
+  let elementFind = arr.filter((person) => person.name === string);
   return elementFind;
 }
