@@ -6,12 +6,17 @@ function findMatching(arr, string) {
   return matchName;
 }
 
-function fuzzyMatch(arr, string) {
-  const provideLetters = arr.filter((lettrs) => lettrs[0] === string[0]);
-  return provideLetters;
-}
+// function fuzzyMatch(arr, string) {
+//   const provideLetters = arr.filter((lettrs) => lettrs[0] === string[0]);
+//   return provideLetters;
+// }
 
 function matchName(arr, string) {
   let elementFind = arr.filter((person) => person.name === string);
   return elementFind;
+}
+
+function fuzzyMatch(arr, string) {
+  const match = arr.filter((letters) => letters[0] === string[0]);
+  return match;
 }
